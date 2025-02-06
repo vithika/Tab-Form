@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+}
+
+
+.heading-container{
+display: flex;
+}
+
+.heading {
+padding: 5px;
+border: 1px solid black;
+cursor: pointer;
+
+}
+.tab-body
+{
+  padding: 5px;
+  display: flex;
+  height: 500px;
+  border: 1px solid black;
+}
+.btns{
+  padding: 15px;
+  flex:1;
+  
+}
+.error
+{
+  color: red;
+  font-size: small;
+  display: block;
+}
