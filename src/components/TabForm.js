@@ -76,7 +76,7 @@ const TabForm = () => {
         {Tabs.map((t, index) => (
           <div
             key={index}
-            className="heading"
+            className={"heading "+  (activeTab==index ? "active":"")}
             onClick={() => {
               if (Tabs[activeTab].validate()) setActiveTab(index)
             }}

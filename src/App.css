@@ -31,3 +31,18 @@ cursor: pointer;
   font-size: small;
   display: block;
 }
+.active{
+  background-color: aqua;
+}
+.profile
+{
+  flex: 1;
+  padding: 15px;
+  
+}.interest
+{
+  flex: 1;
+  padding: 15px;
+
+  
+}

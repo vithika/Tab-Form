@@ -11,9 +11,9 @@ const Profile = ({ data ,setData,errors,activeTab}) => {
 
 
   return (
-    <div>
-         Personal Information
-      <div>
+    <div className="profile">
+        
+      <div className="profile">
         <label>Name:</label>
         <input
           type="text"
@@ -22,7 +22,7 @@ const Profile = ({ data ,setData,errors,activeTab}) => {
         ></input>
        {errors.name &&  <span className="error">{errors.name}</span>}
       </div>
-      <div>
+      <div className="profile"> 
         <label>Age:</label>
         <input
           type="number"
@@ -31,7 +31,7 @@ const Profile = ({ data ,setData,errors,activeTab}) => {
         ></input>
         {errors.age && <span className="error">{errors.age}</span>}
       </div>
-      <div>
+      <div className="profile"> 
         <label>Email:</label>
         <input
           type="text"

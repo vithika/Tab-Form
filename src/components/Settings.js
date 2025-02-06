@@ -7,9 +7,10 @@ const Settings = ({ data, setData }) => {
   };
   const { theme } = data;
   return (
-    <div>
-      Settings
-      <div>
+    <div className="interest">
+      Choose your Theme
+      <div className="interest" >
+
         <label>
           <input
             type="radio"
