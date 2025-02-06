@@ -1,4 +1,4 @@
-const Profile = ({ data ,setData,errors}) => {
+const Profile = ({ data ,setData,errors,activeTab}) => {
   const { name, email, age } = data
 
   
@@ -12,7 +12,7 @@ const Profile = ({ data ,setData,errors}) => {
 
   return (
     <div>
-      Profile
+         Personal Information
       <div>
         <label>Name:</label>
         <input

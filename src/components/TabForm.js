@@ -15,7 +15,7 @@ const TabForm = () => {
   const [errors, setError] = useState({})
   const Tabs = [
     {
-      name: 'Profile',
+      name: 'Personal Information',
       component: Profile,
       validate: () => {
         const err = {}
@@ -81,12 +81,12 @@ const TabForm = () => {
               if (Tabs[activeTab].validate()) setActiveTab(index)
             }}
           >
-            {t.name}
+          {activeTab===index ?"✅" :"☑️"} {t.name}
           </div>
         ))}
       </div>
       <div className="tab-body">
-        <ActiveFormComponent data={data} setData={setData} errors={errors} />
+        <ActiveFormComponent data={data} setData={setData} errors={errors} activeTab= {activeTab} />
       </div>
       <div className="btns">
         {activeTab > 0 && (
