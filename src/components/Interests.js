@@ -31,8 +31,11 @@ const handleDataChange = (e,name) => {
         <input type="checkbox" name="travel" checked={interests.includes("travel")} onChange={handleDataChange}></input>
         Travel
     </label>
+    </div>
+    
+
     {errors.interests && <span className="error">{errors.interests}</span>}
-</div>
+
     </div>
 
     

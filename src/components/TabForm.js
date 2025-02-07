@@ -88,19 +88,19 @@ const TabForm = () => {
       <div className="tab-body">
         <ActiveFormComponent data={data} setData={setData} errors={errors} activeTab= {activeTab} />
       </div>
-      <div className="btns">
+      <div>
         {activeTab > 0 && (
-          <button style={{ margin: 10 }} onClick={handlePrevClick}>
+          <button style={{ height: 40, width: 80, marginRight: 220, marginTop: 10 }} onClick={handlePrevClick}>
             PREV
           </button>
         )}
         {activeTab < Tabs.length - 1 && (
-          <button onClick={handleNextClick} style={{ margin: 10 }}>
+          <button style={{ height:40, width: 80, marginLeft: 40, marginTop: 10 }} onClick={handleNextClick} >
             NEXT
           </button>
         )}
         {activeTab === Tabs.length - 1 && (
-          <button onClick={handleSubmit}>SUBMIT</button>
+          <button   style={{ height: 40, width: 80, marginLeft: 20, marginTop: 10 }} onClick={handleSubmit}>SUBMIT</button>
         )}
       </div>
     </div>

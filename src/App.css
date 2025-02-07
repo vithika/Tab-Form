@@ -20,11 +20,7 @@ cursor: pointer;
   height: 500px;
   border: 1px solid black;
 }
-.btns{
-  padding: 15px;
-  flex:1;
-  
-}
+
 .error
 {
   color: red;
